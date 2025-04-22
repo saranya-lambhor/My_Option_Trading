@@ -25,4 +25,4 @@ def webhook():
 
 if __name__ == '__main__':
     os.mkfifo(pipe_path) if not os.path.exists(pipe_path) else None
-    app.run(port=8000)
+    app.run(host="0.0.0.0",port=8000)
